@@ -21,7 +21,7 @@ CERT_FILE_PATH = os.path.join(BASEDIR, 'config', 'cert')
 TEST_MODE = True
 
 # 采集资产的方式，选项有：agent(默认), salt, ssh
-MODE = 'agent'
+MODE = 'salt'
 
 # 如果采用SSH方式，则需要配置SSH的KEY和USER
 SSH_PRIVATE_KEY = "/home/auto/.ssh/id_rsa"

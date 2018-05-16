@@ -24,13 +24,14 @@ def get_untreated_servers():
         con_date.children.append(("asset__latest_date", None))
 
         # 在线状态的服务器
-        con_status = Q()
-        con_status.children.append(('asset__device_status_id', '2'))
+        # con_status = Q()
+        # con_status.children.append(('asset__device_status_id', '2'))
 
         condition.add(con_date, 'AND')
-        condition.add(con_status, 'AND')
-
+        # condition.add(con_status, 'AND')
+        print(condition)
         result = models.Server.objects.filter(condition).values('hostname')
+        print(result)
         response.data = list(result)
         response.status = True
     except Exception as e:

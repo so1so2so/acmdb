@@ -49,7 +49,7 @@ class Logger(object):
 
     def log(self, message, mode=True):
         """
-        写入日志
+        写入日志,日志入口
         :param message: 日志信息
         :param mode: True表示运行信息，False表示错误信息
         :return:

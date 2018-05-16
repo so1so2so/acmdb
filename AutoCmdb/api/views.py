@@ -56,6 +56,7 @@ class AssetView(View):
         """
 
         server_info = json.loads(request.body.decode('utf-8'))
+
         server_info = json.loads(server_info)
         hostname = server_info['hostname']
 

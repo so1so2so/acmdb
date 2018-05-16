@@ -24,3 +24,42 @@
 2018-05-12 15:23:18,378  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0601A910>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
 2018-05-12 15:23:18,379  - ERROR :  失败
 2018-05-12 15:24:11,036  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x058288D0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 16:22:13,696  - ERROR :  str() takes at most 1 argument (2 given)
+2018-05-12 16:46:27,599  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x06A569D0>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 16:46:27,601  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x06A569D0>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 16:48:24,121  - ERROR :  string argument without an encoding
+2018-05-12 16:48:24,122  - ERROR :  string argument without an encoding
+2018-05-12 16:51:50,728  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x05D398B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 16:51:50,729  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x05D398B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 16:52:11,069  - ERROR :  str() takes at most 1 argument (2 given)
+2018-05-12 16:52:11,071  - ERROR :  str() takes at most 1 argument (2 given)
+2018-05-12 16:53:46,250  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x05F6E8D0>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 16:53:46,252  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x05F6E8D0>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 16:53:57,556  - ERROR :  '>' not supported between instances of 'sys.version_info' and 'float'
+2018-05-12 16:53:57,558  - ERROR :  '>' not supported between instances of 'sys.version_info' and 'float'
+2018-05-12 16:55:09,137  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x054C98F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 16:55:09,138  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x054C98F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 16:55:40,102  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x063038D0>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 16:55:40,104  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x063038D0>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 16:59:16,525  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x05EF7910>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 16:59:16,526  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x05EF7910>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 16:59:32,872  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x05F68950>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 16:59:32,873  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x05F68950>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 17:19:36,095  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0617D750>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 17:20:02,002  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0569D750>: Failed to establish a new connection: [Errno 10061] ',))
+2018-05-12 17:20:35,529  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0592C630>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 17:53:11,224  - ERROR :  HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /api/asset (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x054BC730>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+2018-05-12 17:54:04,553  - ERROR :  API授权失败
+2018-05-12 17:54:04,553  - ERROR :  API授权失败
+2018-05-12 17:58:27,862  - ERROR :  API授权失败
+2018-05-12 17:58:27,883  - ERROR :  API授权失败
+2018-05-12 17:59:37,166  - ERROR :  API授权失败
+2018-05-12 17:59:37,167  - ERROR :  API授权失败
+2018-05-12 18:00:44,507  - ERROR :  [c1.com]资产更新异常
+2018-05-12 18:19:19,645  - ERROR :  [c1.com]资产更新异常
+2018-05-12 18:19:20,095  - ERROR :  [c1.com]资产更新异常
+2018-05-16 21:05:22,324  - ERROR :  API授权失败
+2018-05-16 21:38:19,339  - ERROR :  ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2018-05-16 21:38:31,361  - ERROR :  API授权失败
+2018-05-16 21:38:54,685  - ERROR :  ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2018-05-16 21:39:35,573  - ERROR :  ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))

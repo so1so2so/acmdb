@@ -10,9 +10,9 @@ from src.scripts import client
 
 if __name__ == '__main__':
     client()
-from lib import log
-
-obj = log.Logger()
-obj.log('asdfasdfasdfasdf',True) # 运行日志
-# obj.log('失败',False) # 运行日志
+# from lib import log
+#
+# obj = log.Logger()
+# obj.log('asdfasdfasdfasdf',True) # 运行日志
+# # obj.log('失败',False) # 运行日志
 

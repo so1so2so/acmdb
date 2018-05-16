@@ -9,9 +9,9 @@ from src import plugins
 from lib.serialize import Json
 from lib.log import Logger
 from config import settings
-
+from src.checkpython_version import check
 from concurrent.futures import ThreadPoolExecutor
-
+from requests.exceptions import ConnectionError
 
 class AutoBase(object):
     def __init__(self):
@@ -26,7 +26,11 @@ class AutoBase(object):
         """
         ha = hashlib.md5(self.key.encode('utf-8'))
         time_span = time.time()
-        ha.update(bytes("%s|%f" % (self.key, time_span), encoding='utf-8'))
+        # print(sys.version_info>2.7)
+        if check():
+            ha.update(bytes("%s|%f" % (self.key, time_span), encoding='utf-8'))
+        else:
+            ha.update(bytes("%s|%f" % (self.key, time_span), ))
         encryption = ha.hexdigest()
         result = "%s|%f" % (encryption, time_span)
         return {self.key_name: result}
@@ -39,6 +43,9 @@ class AutoBase(object):
         try:
             headers = {}
             headers.update(self.auth_key())
+            print(headers,"get的时候拿的headers")
+            # 'auth-key': 'fb1e6f0f3031c6f3670375ef3eac622b|1526478137.347875'} headers
+            # fb1e6f0f3031c6f3670375ef3eac622b|1526478137.347875 auth_key
             response = requests.get(
                 url=self.asset_api,
                 headers=headers
@@ -59,6 +66,7 @@ class AutoBase(object):
         status = True
         try:
             headers = {}
+            print(self.auth_key(),"提交的时候拿的key")
             headers.update(self.auth_key())
             response = requests.post(
                 url=self.asset_api,
@@ -85,7 +93,9 @@ class AutoBase(object):
         :param response: 请求成功，则是响应内容对象；请求错误，则是异常对象
         :return:
         """
+        # print status
         if not status:
+            # print type(response)
             Logger().log(str(response), False)
             return
         ret = json.loads(response.text)
@@ -112,6 +122,7 @@ class AutoAgent(AutoBase):
         if not data:
             return None
         cert = data.strip()
+        print(cert)
         return cert
 
     def write_local_cert(self, cert):
@@ -187,7 +198,16 @@ class AutoSalt(AutoBase):
         }
         """
         task = self.get_asset()
-        if not task['status']:
+        # if not task['status']:
+        print(task,"task")
+        # {'status': True, 'message': None, 'data': [{'hostname': 'c1.com'}, {'hostname': 'c10.com'}], 'error': None}
+        # print "tsk的值是:",task
+        if isinstance(task,ConnectionError):
+            Logger().log(task, False)
+            return
+        # if type(task)=='str':
+        #     Logger().log(task, False)
+        elif not task['status']:
             Logger().log(task['message'], False)
 
         # 创建线程池：最大可用线程10
@@ -205,6 +225,7 @@ class AutoSalt(AutoBase):
         # 获取指定主机名的资产信息
         # {'status': True, 'message': None, 'error': None, 'data': {'disk': <lib.response.BaseResponse object at 0x00000000014686A0>, 'main_board': <lib.response.BaseResponse object at 0x00000000014689B0>, 'nic': <lib.response.BaseResponse object at 0x0000000001478278>, 'memory': <lib.response.BaseResponse object at 0x0000000001468F98>, 'os_platform': 'linux', 'os_version': 'CentOS release 6.6 (Final)', 'hostname': 'c1.com', 'cpu': <lib.response.BaseResponse object at 0x0000000001468E10>}}
         server_info = plugins.get_server_info(hostname)
+
         # 序列化成字符串
         server_json = Json.dumps(server_info.data)
         # 发送到API
